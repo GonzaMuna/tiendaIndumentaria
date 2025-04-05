@@ -1,4 +1,180 @@
+/* === Ajustes generales === */
 .selector-for-some-widget {
     box-sizing: content-box;
   }
-
+  
+  body {
+    padding-top: 70px;
+    background-color: #f8f9fa;
+  }
+  
+  /* === Navbar === */
+  .navbar-brand img {
+    max-height: 40px;
+  }
+  
+  /* === Carrusel General (landing) === */
+  .carousel-landing {
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel-landing .carousel-item {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .carousel-landing .carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* === Carrusel de productos (diferente clase, si aplica) === */
+  .carousel-productos {
+    height: 60vh;
+    overflow: hidden;
+  }
+  
+  .carousel-productos .carousel-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .carousel-productos .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .carousel-productos .card img {
+    object-fit: cover;
+    width: 100%;
+    height: 70%;
+  }
+  
+  .carousel-productos .card-body {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* === Tarjetas de producto === */
+  .product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+  
+  /* === Botón de filtro activo === */
+  .filter-btn.active {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  /* === Sección de contacto === */
+  .contact-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 4rem 1rem;
+  }
+  
+  .contact-info {
+    background-color: #e9ecef;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    height: 100%;
+  }
+  
+  .contact-form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  textarea.form-control {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  /* === Responsividad === */
+  @media (max-width: 768px) {
+    .contact-section {
+      flex-direction: column;
+      padding: 2rem 1rem;
+    }
+  }
+  
+  /* === Tarjeta de novedad === */
+  .novedad1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 320px;
+    max-height: 320px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .novedad1 .img-container {
+    height: 55%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .novedad1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #444;
+  }
+  
+  .novedad1 .card-body {
+    height: 45%;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(50, 50, 50, 0.9);
+    text-align: left;
+  }
+  
+  .novedad1 .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #fff;
+  }
+  
+  .novedad1 .card-text {
+    font-size: 0.95rem;
+    color: #e0e0e0;
+  }
+  
+  .novedad1 .card-price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffc107;
+    margin-top: 0.5rem;
+  }
+  
+  /* === Utilidad === */
+  .object-fit-cover {
+    object-fit: cover;
+  }
+  
