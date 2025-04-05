@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+        <!-- Enlace correcto a Font Awesome CDN -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZj6F7eLXvY8qLshE4ZdxNzV+OzDqG2tO1jZ1X24Ouo3yj02z4pAj3xw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Enlace correcto a Font Awesome CDN -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZj6F7eLXvY8qLshE4ZdxNzV+OzDqG2tO1jZ1X24Ouo3yj02z4pAj3xw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+
+    
+</head>
+<body>
+
+    <!-- Header with Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="cart-icon" onclick="toggleCarrito()">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+            <div class="nav-links">
+              <a href="index.html">Inicio</a>
+              <a href="productos.html">Productos</a>
+              <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="cart-icon" onclick="toggleCarrito()">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+        </nav>
+          
+          <!-- Panel lateral del carrito -->
+          <div id="carrito-panel">
+            <span class="close-cart" onclick="toggleCarrito()">&times;</span>
+            <h4>Carrito de compras</h4>
+            <div id="carrito-contenido">
+              <p>No hay productos en el carrito.</p>
+            </div>
+          </div>
+          
+        <script>
+        function toggleCarrito() {
+            const panel = document.getElementById('carrito-panel');
+            panel.classList.toggle('open');
+        }
+          
+            // Ejemplo de cómo podrías agregar productos (esto es solo demostrativo)
+            // Podés reemplazarlo por lógica real más adelante
+            /*
+            const ejemploProducto = {
+              nombre: "Remera negra",
+              precio: 2500
+            };
+          
+            const contenido = document.getElementById('carrito-contenido');
+            contenido.innerHTML = `
+              <div class="carrito-item">
+                <p>${ejemploProducto.nombre}</p>
+                <small>$${ejemploProducto.precio}</small>
+              </div>
+            `;
+            */
+        </script>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>ASTRA PROJECT</h1>
+        <p>Encuentra las últimas tendencias de moda a precios increíbles</p>
+        <a href="productos.html" class="button">Explorar Colección</a>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="product-card col-3">
+            <img src="images/tpd15.jpeg" alt="Producto 1">
+            <h3>Camiseta Básica</h3>
+            <p>Comodidad y estilo para todos los días</p>
+            <div class="price">$15.99</div>
+            <a href="#" class="button">Agregar al Carrito</a>
+        </div>
+
+        <div class="product-card col-3">
+            <img src="images/tpd16.jpeg" alt="Producto 2">
+            <h3>Pantalón Casual</h3>
+            <p>Elige tu estilo para cada ocasión</p>
+            <div class="price">$35.99</div>
+            <a href="#" class="button">Agregar al Carrito</a>
+        </div>
+
+        <div class="product-card col-3">
+            <img src="images/tpd17.jpeg" alt="Producto 3">
+            <h3>Chaqueta de </h3>
+            <p>Perfecta para mantenerte cálido y elegante</p>
+            <div class="price">$45.99</div>
+            <a href="#" class="button">Agregar al Carrito</a>
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Tienda de Ropa. Todos los derechos reservados.</p>
+        <div>
+            <a href="#">Términos y Condiciones</a> | 
+            <a href="#">Política de Privacidad</a> | 
+            <a href="#">FAQ</a>
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" crossorigin="anonymous"></script>
+</html>
