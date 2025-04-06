@@ -32,6 +32,10 @@
     justify-content: center;
   }
 
+.multi-card-carousel {
+  
+}
+
  /* esto es para mover las felchitas del carrusel pero no es una buena practicas asi
  ademas parece q estan en un box que no deberian, porque si o si aparecen sobrre la imagen */
   .multi-card-carousel .carousel-control-prev {
@@ -55,6 +59,11 @@
     height: 100%;
   }
   
+  .explorarbtn {
+    position: relative;
+    top: 7vh;
+  }
+
   /* === Carrusel de productos (diferente clase, si aplica) === */
   .carousel-productos {
     height: 60vh;
