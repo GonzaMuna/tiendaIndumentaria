@@ -139,9 +139,7 @@
   
   .novedad1 img {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
-    background-color: #444;
+    height: 50%;
   }
   
   .novedad1 .card-body {
