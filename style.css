@@ -14,8 +14,17 @@
   }
   
   /* === Carrusel General (landing) === */
+.carruselytitulo {
+  height: 70vh;
+}
+
+  .principalcarrusel {
+    height: 85%;
+  }
+
   .carousel-landing {
-    height: 50vh;
+    height: 100%;
+    padding: 0.8rem;
     overflow: clip;
     position: relative;
     display: flex;
@@ -26,13 +35,12 @@
  /* esto es para mover las felchitas del carrusel pero no es una buena practicas asi
  ademas parece q estan en un box que no deberian, porque si o si aparecen sobrre la imagen */
   .multi-card-carousel .carousel-control-prev {
+      
     left: -80px; /* Ajustá esto según el espacio que tengas */
-    color: red;
   }
   
   .multi-card-carousel .carousel-control-next {
     right: -80px;
-    color: red;
   }   
 
   
